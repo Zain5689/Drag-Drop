@@ -1,0 +1,108 @@
+:root {
+  --btn-color: #003c43;
+  --main-color: #77b0aa;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--main-color);
+}
+
+.input {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .input {
+    margin-top: 50px;
+  }
+}
+h2 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.date {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.date input {
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border: 1px solid var(--btn-color);
+  border-radius: 10px;
+}
+
+.date button {
+  width: 100px;
+  border: none;
+  padding: 5px;
+  color: #fff;
+  background-color: var(--btn-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.boxs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .boxs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.boxs .box {
+  width: 150px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .boxs .box {
+    width: 80%;
+  }
+}
+
+.boxs .box p {
+  width: 100%;
+  background-color: var(--btn-color);
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 2px;
+}
